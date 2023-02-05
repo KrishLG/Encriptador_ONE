@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS_Ch1.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Images/logo_oracleAlura.png" alt="Logo Oracle+Alura">
+    </header>
+    <main>
+        <section class="LadoA">
+            <textarea class="Ingreso-txt" cols="35" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="SubA">
+                <h6 class="info"> Sólo letras minúsculas y sin acentos</h6>
+                <div class="botones">
+                    <button class="btn-Encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-Desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                 </div>
+            </div>
+            
+        </section>
+        <section class="LadoB">
+            <div class="MensajeCuadro">
+                <p class="Titulo_msj">Ningún mensaje fue encontrado</h3>
+                <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+            <textarea class="Salida-txt" cols="25" rows="10" readonly="readonly"></textarea>
+            
+        </section>
+        
+    </main>
+    <footer>
+        <p class="Autor">By KS_González</p>
+        <p class="Txt">#challengeonedecoder4</p>
+    </footer> 
+    <script src="JS_Ch1.js"></script>
+</body>
+
+</html>
